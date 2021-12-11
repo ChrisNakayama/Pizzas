@@ -1,0 +1,23 @@
+.initially-hidden {
+  display: none;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 41;
+  background-color: #894799;
+  margin-top: 0;
+  padding-top: 24px;
+}
+
+.pizza-info-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.pizza h4 {
+  color: rgb(177, 77, 177);
+  cursor: pointer;
+  font-weight: bold;
+}
