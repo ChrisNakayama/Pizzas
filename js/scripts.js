@@ -31,4 +31,27 @@ Pizza.prototype.addVeg = function(veggie) {
       cost += 1;
     } 
     this.cost = cost;   
-}      
+}
+// Order Pizza
+function Order(customerName, customerAddress, customerPhone, customerCashCredit) {
+  this.customerName = customerName;
+  this.customerAddress = customerAddress;
+  this.customerPhone = customerPhone;
+  this.customerCashCredit = customerCashCredit;
+  this.pizzas = [];
+}
+Order.prototype.addPizza = function(pizza) {
+  pizza.refreshCost();
+  this.pizzas.push(pizza);
+}
+Order.prototype.removePizza = function(pizzaNumber) {
+  this.pizzas.splice(pizzaNumber-1,1);
+}
+Order.prototype.determineTotalCost = function() {
+  var totalCost = 0;
+  this.pizzas.forEach(function(pizza) {
+    totalCost += pizza.cost;
+  });
+  this.totalCost = totalCost;
+}  
+
