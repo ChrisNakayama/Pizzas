@@ -1,11 +1,11 @@
-Pizza Shop
+Detroit Pizza is lighter and the sauce is on top of the cheese so the top does not get soggy.
 
 
 By Christopher Nakayama
 
 Description:
 
-Pizza Order Form
+Detroit Pizza Order Form
 
 This is a simple order form to take in pizza orders from a customer. 
 The program captures the customer information.
